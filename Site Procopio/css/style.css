@@ -105,7 +105,7 @@ a:hover,
 
 a,
 button {
-    color: rgb(223, 89, 0);
+    color: orange;
     outline: medium none;
 }
 
@@ -1364,21 +1364,22 @@ h3 {
 /* line 1, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_slider.scss */
 
 .slider_bg_1 {
-    background-image: url(../img/banner/800x534.png);
+    /*background-image: url(../img/banner/800x534.png);*/
+    background-image: url(../img/banner/Banner-1.jpg);
 }
 
 
 /* line 4, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_slider.scss */
 
 .slider_bg_2 {
-    background-image: url(../img/banner/800x534.png);
+    background-image: url(../img/banner/Banner-2.jpg);
 }
 
 
 /* line 7, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_slider.scss */
 
 .slider_bg_3 {
-    background-image: url(../img/banner/800x534.png);
+    background-image: url(../img/banner/Banner-3.jpg);
 }
 
 .slider_area {
@@ -1389,7 +1390,7 @@ h3 {
 
 .slider_area .slider_text {
     position: absolute;
-    top: 28%;
+    top: 35%;
     left: 5%;
     width: 100%;
     z-index: 999;
@@ -2974,8 +2975,8 @@ h3 {
 /* line 9, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_footer.scss */
 
 .footer .footer_top {
-    padding-top: 80px;
-    padding-bottom: 90px;
+    padding-top: 50px;
+    padding-bottom: 0px;
 }
 
 @media (max-width: 767px) {
@@ -3060,7 +3061,7 @@ h3 {
 @media (max-width: 767px) {
     /* line 51, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_footer.scss */
     .footer .footer_top .footer_widget .footer_logo {
-        margin-bottom: 800px;
+        margin-bottom: 0px;
     }
 }
 
@@ -3161,7 +3162,7 @@ h3 {
 /* line 115, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_footer.scss */
 
 .footer .footer_top .footer_widget ul li a:hover {
-    color: #eb592d;
+    color: #fff01a;
 }
 
 
@@ -3336,7 +3337,7 @@ h3 {
 /* line 225, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_footer.scss */
 
 .footer .socail_links ul li a:hover {
-    color: #eb592d !important;
+    color: #fff01a !important;
     border-color: transparent;
 }
 
