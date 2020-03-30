@@ -15,6 +15,146 @@
     justify-content: start;
 }
 
+div .fixed {
+    position: fixed; top: 0; left: 0; 
+}
+
+.nice-select {
+  -webkit-tap-highlight-color: transparent;
+  background-color: #fff;
+  border-radius: 5px;
+  border: solid 1px #e0e7ee;
+  box-sizing: border-box;
+  clear: both;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  height: 42px;
+  line-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 30px;
+  position: relative;
+  text-align: left !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+  width: auto; }
+  .nice-select:hover {
+    border-color: #d0dae5; }
+  .nice-select:active, .nice-select.open, .nice-select:focus {
+    border-color: #88bfff; }
+  .nice-select:after {
+    border-bottom: 2px solid #90a1b5;
+    border-right: 2px solid #90a1b5;
+    content: '';
+    display: block;
+    height: 5px;
+    margin-top: -4px;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    -webkit-transform-origin: 66% 66%;
+        -ms-transform-origin: 66% 66%;
+            transform-origin: 66% 66%;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    width: 5px; }
+  .nice-select.open:after {
+    -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+            transform: rotate(-135deg); }
+  .nice-select.open .list {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: scale(1) translateY(0);
+        -ms-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0); }
+  .nice-select.disabled {
+    border-color: #e7ecf2;
+    color: #90a1b5;
+    pointer-events: none; }
+    .nice-select.disabled:after {
+      border-color: #cdd5de; }
+  .nice-select.wide {
+    width: 100%; }
+    .nice-select.wide .list {
+      left: 0 !important;
+      right: 0 !important; }
+  .nice-select.right {
+    float: right; }
+    .nice-select.right .list {
+      left: auto;
+      right: 0; }
+  .nice-select.small {
+    font-size: 12px;
+    height: 36px;
+    line-height: 34px; }
+    .nice-select.small:after {
+      height: 4px;
+      width: 4px; }
+    .nice-select.small .option {
+      line-height: 34px;
+      min-height: 34px; }
+  .nice-select .list {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(68, 88, 112, 0.11);
+    box-sizing: border-box;
+    margin-top: 4px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    -webkit-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+    -webkit-transform: scale(0.75) translateY(-21px);
+        -ms-transform: scale(0.75) translateY(-21px);
+            transform: scale(0.75) translateY(-21px);
+    -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    z-index: 9; }
+    .nice-select .list:hover .option:not(:hover) {
+      background-color: transparent !important; }
+  .nice-select .option {
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 40px;
+    list-style: none;
+    min-height: 40px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 29px;
+    text-align: left;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+    background-color: #f6f7f9; 
+}
+.nice-select .option.selected {
+    font-weight: bold; 
+}
+
+.nice-select .option.disabled {
+    background-color: transparent;
+    color: #90a1b5;
+    cursor: default; 
+}
 
 /* line 13, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_extend.scss */
 
@@ -46,7 +186,7 @@
 /* line 4, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_reset.scss */
 
 body {
-    font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
+    font-family: montserrat, sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -105,7 +245,6 @@ a:hover,
 
 a,
 button {
-    color: orange;
     outline: medium none;
 }
 
@@ -155,7 +294,7 @@ p {
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
-    color: #000000;
+    color: #999;
     margin-bottom: 13px;
     font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
 }
@@ -476,9 +615,9 @@ h3 {
 /* line 17, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_btn.scss */
 
 .boxed-btn:hover {
-    background: #EB592D;
+    background: #2B2D69;
     color: #fff !important;
-    border: 1px solid #EB592D;
+    border: 1px solid #2B2D69;
 }
 
 
@@ -501,22 +640,23 @@ h3 {
 .boxed-btn3 {
     background: #fff01a;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: bold;
     border: 1px solid transparent;
-    color: #000000;
-    padding: 19px 43px 23px 43px;
-    font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
+    padding: 20px 20px 20px;
     display: inline-block;
-    line-height: 1;
+    align-items: center !important;
+    justify-content: center;
+    color: #0A0B19;
+    font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
 }
 
 
 /* line 39, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_btn.scss */
 
 .boxed-btn3:hover {
-    background: transparent;
+    background: #2B2D69;
     color: #fff01a;
-    border: 1px solid #fff01a;
+    border: 1px solid #FFF452;
 }
 
 
@@ -1043,6 +1183,7 @@ h3 {
     /* line 22, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_header.scss */
     .header-area .main-header-area .logo-img {
         text-align: left;
+        padding-bottom: 0px !important;
     }
 }
 
@@ -1050,6 +1191,7 @@ h3 {
     /* line 22, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_header.scss */
     .header-area .main-header-area .logo-img {
         text-align: left;
+        padding-bottom: 0px !important;
     }
 }
 
@@ -1057,6 +1199,7 @@ h3 {
     /* line 22, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_header.scss */
     .header-area .main-header-area .logo-img {
         text-align: left;
+        padding-bottom: 0px !important;
     }
 }
 
@@ -1064,6 +1207,7 @@ h3 {
     /* line 35, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_header.scss */
     .header-area .main-header-area .logo-img img {
         width: 70px;
+        padding-bottom: 0px !important;
     }
 }
 
@@ -1071,6 +1215,7 @@ h3 {
     /* line 35, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_header.scss */
     .header-area .main-header-area .logo-img img {
         width: 70px;
+        padding-bottom: 0px !important;
     }
 }
 
@@ -1123,9 +1268,9 @@ h3 {
 .header-area .main-header-area .book_room .book_btn a {
     background: #fff01a;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: bold;
     border: 1px solid transparent;
-    color: #000000;
+    color: #0A0B19;
     padding: 20px;
     display: flex;
     align-items: center !important;
@@ -1136,7 +1281,7 @@ h3 {
 /* line 78, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_header.scss */
 
 .header-area .main-header-area .book_room .book_btn a:hover {
-    background: transparent;
+    background: #2B2D69;
     color: #FFF452;
     border: 1px solid #FFF452;
 }
@@ -1175,10 +1320,10 @@ h3 {
 /* line 99, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_header.scss */
 
 .header-area .main-header-area .main-menu ul li a {
-    color: #000000;
+    color: #2B2D69;
     font-size: 16px;
     text-transform: capitalize;
-    font-weight: normal;
+    font-weight: bold;
     display: inline-block;
     padding: 39px 0px 39px 0px;
     font-family: montserrat, sans-serif;
@@ -1379,11 +1524,8 @@ h3 {
 /* line 7, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_slider.scss */
 
 .slider_bg_3 {
-<<<<<<< HEAD
-    background-image: url(../img/banner/Banner-3.jpg);
-=======
+   /* background-image: url(../img/banner/Banner-3.jpg);*/
     background-image: url(../img/banner/banner55.jpg);
->>>>>>> 8322a56638fde4ac243aa11752e74e82eb655b3f
 }
 
 .slider_area {
@@ -1415,7 +1557,7 @@ h3 {
 /* line 23, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_slider.scss */
 
 .slider_area .slider_text h3 {
-    color: #000000;
+    color: #2B2D69;
     font-family: montserrat, sans-serif;
     font-size: 65px;
     font-weight: bold;
@@ -1434,7 +1576,7 @@ h3 {
         height: 600px;
     }
     .slider_area .slider_text h3 {
-        color: #ffffff;
+        color: #2B2D69;
         font-family: montserrat, sans-serif;
         font-size: 20px;
         font-weight: bold;
@@ -1455,7 +1597,7 @@ h3 {
     }
 */
     .slider_area .slider_text h3 {
-        color: #ffffff;
+        color: #2B2D69;
         font-family: montserrat, sans-serif;
         font-size: 40px;
         font-weight: bold;
@@ -1475,7 +1617,7 @@ h3 {
         height: 600px;
     }*/
     .slider_area .slider_text h3 {
-        color: #ffffff;
+        color: #2B2D69;
         font-family: montserrat, sans-serif;
         font-size: 40px;
         font-weight: bold;
@@ -1576,7 +1718,7 @@ h3 {
 .about_area {
     padding-top: 150px;
     padding-bottom: 150px;
-    background: #FDF9F6;
+    background: #E8EAED;
 }
 
 @media (max-width: 767px) {
@@ -2012,6 +2154,7 @@ h3 {
 /* line 11, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_service.scss */
 
 .service_area .single_service .service_thumb img {
+    border: 1px solid #3E3F91;
     width: 100%;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
@@ -2048,6 +2191,12 @@ h3 {
     }
 }
 
+@media (min-width: 768px) and (max-width: 993px) {
+    .col-lg-4, .col-md-6{
+        padding-right: 0px !important;
+    }
+}
+
 
 /* line 29, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_service.scss */
 
@@ -2060,7 +2209,7 @@ h3 {
     -webkit-box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.28);
     -moz-box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.28);
     box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.28);
-    color: rgb(3, 133, 255);
+    color: #2B2D69;
     text-align: center;
     line-height: 55px;
     position: absolute;
@@ -2346,7 +2495,7 @@ h3 {
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
-    background: #fdf9f6;
+    background: #E8EAED;
 }
 
 @media (max-width: 767px) {
@@ -2970,7 +3119,7 @@ h3 {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background: rgb(3, 133, 255);
+    background: #384659;
     position: relative;
     z-index: 0;
 }
@@ -3036,7 +3185,7 @@ h3 {
 .footer .footer_top .footer_widget .footer_title {
     font-size: 18px;
     font-weight: 400;
-    color: #000000;
+    color: #fff;
     text-transform: capitalize;
     margin-bottom: 38px;
     font-family: montserrat, sans-serif;
@@ -3157,7 +3306,7 @@ h3 {
 /* line 111, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_footer.scss */
 
 .footer .footer_top .footer_widget ul li a {
-    color: #fff;
+    color: #999;
     font-weight: 400;
     font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
 }
@@ -3281,7 +3430,7 @@ h3 {
 
 .footer .copy-right_text .copy_right {
     font-size: 15px;
-    color: #fff;
+    color: #999;
     margin-bottom: 0;
     font-weight: 400;
 }
@@ -3297,7 +3446,7 @@ h3 {
 /* line 196, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_footer.scss */
 
 .footer .copy-right_text .copy_right a {
-    color: #eb592d;
+    color: #999;
 }
 
 
@@ -3337,6 +3486,14 @@ h3 {
     color: #E8E8E8;
 }
 
+.make_apppointment_area .appointMent_info .single_appontment > p > a{
+    color: #06063e;
+}
+
+
+.make_apppointment_area .appointMent_info .single_appontment > p > a:hover{
+    color:#fff01a;
+}
 
 /* line 225, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_footer.scss */
 
@@ -3418,9 +3575,9 @@ h3 {
 /* line 35, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_bradcam.scss */
 
 .popup_box {
-    background: #fff;
+    background: #fdf9f6;
     display: inline-block;
-    z-index: 9;
+    z-index: 999;
     width: 681px;
     padding: 60px 40px;
 }
@@ -3433,7 +3590,7 @@ h3 {
     }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 1147px) {
     /* line 35, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_bradcam.scss */
     .popup_box {
         width: 420px !important;
@@ -3441,6 +3598,9 @@ h3 {
     }
 }
 
+@media only screen and (max-width: 767px) and (min-width: 576px){
+
+}
 
 /* line 54, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_bradcam.scss */
 
@@ -3472,7 +3632,7 @@ h3 {
     cursor: pointer;
     display: block;
     float: left;
-    font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
+    font-family: montserrat, sans-serif;
     font-weight: normal;
     width: 100% !important;
     /* height: 42px; */
@@ -3499,24 +3659,6 @@ h3 {
 }
 
 
-/* line 98, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_bradcam.scss */
-
-.popup_box .nice-select::after {
-    content: "\f0d7";
-    display: block;
-    height: 5px;
-    margin-top: -5px;
-    pointer-events: none;
-    position: absolute;
-    right: 17px;
-    top: 3px;
-    transition: all 0.15s ease-in-out;
-    width: 5px;
-    font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
-    color: #919191;
-    font-size: 15px;
-}
-
 
 /* line 113, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_bradcam.scss */
 
@@ -3526,14 +3668,6 @@ h3 {
     -webkit-transform: scale(1) translateY(0);
     -ms-transform: scale(1) translateY(0);
     transform: scale(1) translateY(0);
-    height: 200px;
-    overflow-y: scroll;
-}
-
-
-/* line 122, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_bradcam.scss */
-
-.popup_box .nice-select.list {
     height: 200px;
     overflow-y: scroll;
 }
@@ -3572,26 +3706,18 @@ h3 {
 /* line 143, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_bradcam.scss */
 
 #test-form .mfp-close-btn-in .mfp-close {
-    color: #333;
+    color: #070819;
     display: none !important;
 }
 
 
 /* line 148, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_bradcam.scss */
-
 #test-form button.mfp-close {
-    display: none !important;
-}
-
-@media (max-width: 767px) {
-    /* line 148, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_bradcam.scss */
-    #test-form button.mfp-close {
         display: block !important;
         position: absolute;
         left: 0;
         right: 0;
         margin: auto;
-    }
 }
 
 
@@ -3607,11 +3733,11 @@ h3 {
     outline: none;
     padding: 0;
     z-index: 1046;
-    box-shadow: none;
+    box-shadow: inherit;
     touch-action: manipulation;
-    width: 40px;
+    /*width: 40px;*/
     height: 40px;
-    background: #4A3600;
+    background: #070819;
     text-align: center;
     line-height: 20px;
     position: absolute;
@@ -3619,7 +3745,6 @@ h3 {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     position: absolute;
-    right: -6px;
     color: #fff !important;
 }
 
@@ -3634,7 +3759,7 @@ h3 {
     z-index: 1042;
     overflow: hidden;
     position: fixed;
-    background: #4A3600;
+    background: #070819;
     opacity: 0.6;
 }
 
@@ -5333,156 +5458,6 @@ h6 {
     height: 40px;
 }
 
-
-/* line 1001, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_elements.scss */
-
-.default-select .nice-select {
-    border: none;
-    border-radius: 0px;
-    height: 40px;
-    background: #f9f9ff;
-    padding-left: 20px;
-    padding-right: 40px;
-}
-
-
-/* line 1008, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_elements.scss */
-
-.default-select .nice-select .list {
-    margin-top: 0;
-    border: none;
-    border-radius: 0px;
-    box-shadow: none;
-    width: 100%;
-    padding: 10px 0 10px 0px;
-}
-
-
-/* line 1015, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_elements.scss */
-
-.default-select .nice-select .list .option {
-    font-weight: 300;
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    line-height: 28px;
-    min-height: 28px;
-    font-size: 12px;
-    padding-left: 20px;
-}
-
-
-/* line 1022, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_elements.scss */
-
-.default-select .nice-select .list .option.selected {
-    color: #222222;
-    background: transparent;
-}
-
-
-/* line 1026, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_elements.scss */
-
-.default-select .nice-select .list .option:hover {
-    color: #222222;
-    background: transparent;
-}
-
-
-/* line 1033, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_elements.scss */
-
-.default-select .current {
-    margin-right: 50px;
-    font-weight: 300;
-}
-
-
-/* line 1037, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_elements.scss */
-
-.default-select .nice-select::after {
-    right: 20px;
-}
-
-
-/* line 1042, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_elements.scss */
-
-.form-select {
-    height: 40px;
-    width: 100%;
-}
-
-
-/* line 1045, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_elements.scss */
-
-.form-select .nice-select {
-    border: none;
-    border-radius: 0px;
-    height: 40px;
-    background: #f9f9ff;
-    padding-left: 45px;
-    padding-right: 40px;
-    width: 100%;
-}
-
-
-/* line 1053, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_elements.scss */
-
-.form-select .nice-select .list {
-    margin-top: 0;
-    border: none;
-    border-radius: 0px;
-    box-shadow: none;
-    width: 100%;
-    padding: 10px 0 10px 0px;
-}
-
-
-/* line 1060, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_elements.scss */
-
-.form-select .nice-select .list .option {
-    font-weight: 300;
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    line-height: 28px;
-    min-height: 28px;
-    font-size: 12px;
-    padding-left: 45px;
-}
-
-
-/* line 1067, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_elements.scss */
-
-.form-select .nice-select .list .option.selected {
-    color: #222222;
-    background: transparent;
-}
-
-
-/* line 1071, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_elements.scss */
-
-.form-select .nice-select .list .option:hover {
-    color: #222222;
-    background: transparent;
-}
-
-
-/* line 1078, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_elements.scss */
-
-.form-select .current {
-    margin-right: 50px;
-    font-weight: 300;
-}
-
-
-/* line 1082, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_elements.scss */
-
-.form-select .nice-select::after {
-    right: 20px;
-}
-
-
 /* line 1086, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_elements.scss */
 
 .mt-10 {
@@ -6722,6 +6697,10 @@ h6 {
     }
 }
 
+.typewrite > .wrap{
+    color: #fff01a;
+}
+
 
 /* line 1101, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_blog.scss */
 
@@ -7587,3 +7566,27 @@ h6 {
 
 
 /*# sourceMappingURL=style.css.map */
+
+/* degrade para a barra vertical */
+body::-webkit-scrollbar-thumb {
+border-radius: 10px;
+border-right: 2px solid #2B2D69;
+
+background: #2B2D69;
+
+}
+
+body::-webkit-scrollbar{
+width: 10px;
+
+background: rgba(255, 255, 255, 2);
+}
+ 
+/* degrade para a barra horizontal com a direção do degrade alterada */
+body::-webkit-scrollbar-thumb:horizontal {
+background: #2e9dd8;
+background: -moz-linear-gradient(left, #333333 0%, #3f69b1 25%, #2e9dd8 50%, #3f69b1 76%, #333333 100%);
+background: -webkit-linear-gradient(left, #333333 0%,#3f69b1 25%,#2e9dd8 50%,#3f69b1 76%,#333333 100%);
+background: linear-gradient(to right, #333333 0%,#3f69b1 25%,#2e9dd8 50%,#3f69b1 76%,#333333 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#333333',GradientType=0 );
+}
