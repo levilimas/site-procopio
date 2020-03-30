@@ -105,7 +105,7 @@ a:hover,
 
 a,
 button {
-    color: rgb(223, 89, 0);
+    color: orange;
     outline: medium none;
 }
 
@@ -155,7 +155,7 @@ p {
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
-    color: #727272;
+    color: #000000;
     margin-bottom: 13px;
     font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
 }
@@ -303,10 +303,10 @@ h3 {
 .overlay::before {
     position: absolute;
     content: "";
-    top: 0;
+    top: 0%;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 0%;
+    height: 0%;
     z-index: -1;
 }
 
@@ -324,7 +324,7 @@ h3 {
 .overlay2::before {
     position: absolute;
     content: "";
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.075);
     top: 0;
     left: 0;
     width: 100%;
@@ -503,7 +503,7 @@ h3 {
     font-size: 16px;
     font-weight: normal;
     border: 1px solid transparent;
-    color: #fff;
+    color: #000000;
     padding: 19px 43px 23px 43px;
     font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
     display: inline-block;
@@ -1008,7 +1008,7 @@ h3 {
 }
 
 .header-area.navbar-dark {
-    background: #000;
+    background: #ffffff;
 }
 
 @media (max-width: 767px) {
@@ -1125,7 +1125,7 @@ h3 {
     font-size: 16px;
     font-weight: normal;
     border: 1px solid transparent;
-    color: #fff;
+    color: #000000;
     padding: 20px;
     display: flex;
     align-items: center !important;
@@ -1175,7 +1175,7 @@ h3 {
 /* line 99, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_header.scss */
 
 .header-area .main-header-area .main-menu ul li a {
-    color: #fff;
+    color: #000000;
     font-size: 16px;
     text-transform: capitalize;
     font-weight: normal;
@@ -1364,21 +1364,22 @@ h3 {
 /* line 1, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_slider.scss */
 
 .slider_bg_1 {
-    background-image: url(../img/banner/800x534.png);
+    /*background-image: url(../img/banner/800x534.png);*/
+    background-image: url(../img/banner/Banner-1.jpg);
 }
 
 
 /* line 4, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_slider.scss */
 
 .slider_bg_2 {
-    background-image: url(../img/banner/800x534.png);
+    background-image: url(../img/banner/Banner-2.jpg);
 }
 
 
 /* line 7, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_slider.scss */
 
 .slider_bg_3 {
-    background-image: url(../img/banner/800x534.png);
+    background-image: url(../img/banner/banner55.jpg);
 }
 
 .slider_area {
@@ -1389,7 +1390,7 @@ h3 {
 
 .slider_area .slider_text {
     position: absolute;
-    top: 28%;
+    top: 35%;
     left: 5%;
     width: 100%;
     z-index: 999;
@@ -1410,7 +1411,7 @@ h3 {
 /* line 23, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_slider.scss */
 
 .slider_area .slider_text h3 {
-    color: #ffffff;
+    color: #000000;
     font-family: montserrat, sans-serif;
     font-size: 65px;
     font-weight: bold;
@@ -2055,7 +2056,7 @@ h3 {
     -webkit-box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.28);
     -moz-box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.28);
     box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.28);
-    color: #FFF452;
+    color: rgb(3, 133, 255);
     text-align: center;
     line-height: 55px;
     position: absolute;
@@ -2965,7 +2966,7 @@ h3 {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background: #000;
+    background: rgb(3, 133, 255);
     position: relative;
     z-index: 0;
 }
@@ -2974,8 +2975,8 @@ h3 {
 /* line 9, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_footer.scss */
 
 .footer .footer_top {
-    padding-top: 80px;
-    padding-bottom: 90px;
+    padding-top: 50px;
+    padding-bottom: 0px;
 }
 
 @media (max-width: 767px) {
@@ -3031,7 +3032,7 @@ h3 {
 .footer .footer_top .footer_widget .footer_title {
     font-size: 18px;
     font-weight: 400;
-    color: #fff;
+    color: #000000;
     text-transform: capitalize;
     margin-bottom: 38px;
     font-family: montserrat, sans-serif;
@@ -3060,7 +3061,7 @@ h3 {
 @media (max-width: 767px) {
     /* line 51, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_footer.scss */
     .footer .footer_top .footer_widget .footer_logo {
-        margin-bottom: 800px;
+        margin-bottom: 0px;
     }
 }
 
@@ -3161,7 +3162,7 @@ h3 {
 /* line 115, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_footer.scss */
 
 .footer .footer_top .footer_widget ul li a:hover {
-    color: #eb592d;
+    color: #fff01a;
 }
 
 
@@ -3336,7 +3337,7 @@ h3 {
 /* line 225, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_footer.scss */
 
 .footer .socail_links ul li a:hover {
-    color: #eb592d !important;
+    color: #fff01a !important;
     border-color: transparent;
 }
 
