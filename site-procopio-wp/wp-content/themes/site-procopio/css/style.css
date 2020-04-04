@@ -42,7 +42,36 @@ background: #2B2D69;
       color: #fff;
       text-decoration: none;  
     }
+
+    .slider_area .slider_text a:hover:before, .about_info a:hover:before, .make_apppointment_area .appoint_ment_form form button:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+
+    .slider_area .slider_text a:before, .about_info a:before, .make_apppointment_area .appoint_ment_form form button:before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background-color: #2B2D69;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    .slider_area .slider_text a, .about_info a, .make_apppointment_area .appoint_ment_form form button {
+      position: relative;
+      text-decoration: none;  
+    }
+
+
 }
+
  .wrapper{
     border: 1px dashed red;
     height: 150px;
@@ -759,6 +788,34 @@ h3 {
     border-radius: 5px;
 }
 
+
+.about_area .boxed-btn3 {
+    background: #fff01a;
+    font-size: 16px !important; 
+    font-weight: bold;
+    border: 1px solid transparent;
+    padding: 15px !important;
+    display: inline-block;
+    align-items: center !important;
+    justify-content: center;
+    color: #0A0B19;
+    font-family: Creo;
+    border-radius: 5px;
+}
+
+.make_apppointment_area .boxed-btn3 {
+    background: #fff01a;
+    font-size: 16px !important;
+    font-weight: bold;
+    border: 1px solid transparent;
+    padding: 15px 35px !important;
+    display: inline-block;
+    align-items: center !important;
+    justify-content: center;
+    color: #0A0B19;
+    font-family: Creo;
+    border-radius: 5px;
+}
 
 /* line 39, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_btn.scss */
 

@@ -5898,7 +5898,14 @@
     }
   ]
 };
+        $(document).ready(function() {
+            $('.slider-active').owlCarousel({
+                loop: $('.owl-carousel .owl-item').length > 1 ? true : false,
+                items: 1
+            });
+        });
 
+        
 
         function buscaCidades(e){
            document.querySelector("#cidade").innerHTML = '';

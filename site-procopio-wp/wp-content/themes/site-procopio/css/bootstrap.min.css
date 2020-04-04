@@ -2849,14 +2849,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-danger {
-    font-family: Creo-Light;
+    font-family: Creo;
     color: #fff;
     background-color: #dc3545;
     border-color: #dc3545
 }
 
 .btn-danger:hover {
-    font-family: Creo-Light;
+    font-family: Creo;
     color: #fff;
     background-color: #c82333;
     border-color: #bd2130
