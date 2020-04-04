@@ -703,6 +703,22 @@ h3 {
     cursor: pointer;
 }
 
+@media (max-width: 700px) and (min-width: 420px){
+    .boxed-btn3{
+        font-size: 17px !important;
+    }
+
+}
+
+@media (max-width: 420px) and (min-width: 320px){
+    .boxed-btn3{
+        font-size: 12px !important;
+    }
+
+    .slider_area .slider_text h3{
+        font-size: 38px !important;
+    }
+}
 
 /* line 17, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_btn.scss */
 
@@ -731,7 +747,7 @@ h3 {
 
 .boxed-btn3 {
     background: #fff01a;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: bold;
     border: 1px solid transparent;
     padding: 20px 20px 20px;
@@ -1637,12 +1653,13 @@ h3 {
 /* line 23, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_slider.scss */
 
 .slider_area .slider_text h3 {
+    text-transform: uppercase;
     color: #2B2D69;
     font-family: Creo;
-    font-size: 65px;
+    font-size: 35px;
     font-weight: bold;
     margin-bottom: 4px;
-    line-height: 75px;
+    /*line-height: 75px;*/
     letter-spacing: 3px;
     word-break: break-all;
 }
@@ -1829,6 +1846,7 @@ h3 {
 /* line 18, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_about.scss */
 
 .about_area .section_title p {
+    text-align: justify;
     color: #575757;
 }
 

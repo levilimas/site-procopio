@@ -6,10 +6,10 @@
 
     <div class="slider_area">
         <div class="slider_text">
-            <h3>Faça agora um orçamento
-                <h3><span>GRATUITO de energia solar.</h3></span></h3>
+            <h3>Energia Solar Residencial e Comercial</h3>
+            <h3><span style="font-size: 25px; text-transform: none; font-family: Source Sans Pro, sans-serif"> Economize até 95% na sua conta de energia.</span></h3>
             <p></p>
-            <a href="#test-form" data-toggle="modal" data-target="#calculadoraModal" data-whatever="@getbootstrap" class="boxed-btn3" id="travabotao">SIMULAR AGORA</a>
+            <a href="#test-form" data-toggle="modal" data-target="#calculadoraModal" data-whatever="@getbootstrap" class="boxed-btn3" id="travabotao">FAÇA AGORA SEU ORÇAMENTO GRATUITO</a>
         </div>
 
         <div class="slider_active owl-carousel">
@@ -59,8 +59,7 @@
                     <div class="about_info">
                         <div class="section_title mb-20px">
                             <h3>Sobre Nós</h3>
-                            <p>A Procópio Engenharia é uma empresa de engenharia elétrica, focada em sistemas fotovoltáicos residenciais e comerciais. Nossa equipe é composta por engenheiros e técnicos qualificados e engajados para melhor atender nossos
-                                clientes e mudar a forma como o mundo interage com as energias renováveis e as novas tecnologias de automação residencial e comercial.</p>
+                            <p>A Procópio Engenharia é uma empresa, focada em sistemas fotovoltáicos e projetos de automação residenciais e comerciais. Nossa equipe é composta por engenheiros e técnicos engajados em melhor atender nossos clientes e mudar a forma como o mundo interage com as energias renováveis e as novas tecnologias de automação residencial e comercial.</p>
                         </div>
                         <p class="opening_hour">
                             <span>ATENDIMENTO PERSONALIZADO!</span>
@@ -94,7 +93,7 @@
                                 <i class="fa fa-home"></i>
                             </div>
                             <h3>Automação Residencial</h3>
-                            <p>Sua casa inteligente e com maior comodidade em todas as horas, garantindo mais conforto e facilidade de gerir equipamentos a qualquer distância.</p>
+                            <p>Sua casa inteligente e com maior comodidade em todas as horas, garantindo mais conforto e facilidade de gerir equipamentos e ambientes a qualquer distância.</p>
                         </div>
                     </div>
                 </div>

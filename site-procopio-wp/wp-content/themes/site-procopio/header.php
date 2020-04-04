@@ -27,7 +27,8 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">SIMULAÇÃO DE ORÇAMENTO</h5>
+                    <h4 style="text-align: center"class="modal-title" id="exampleModalLabel">SIMULADOR SOLAR</h4>
+                    <h6 style="font-style: italic; font-family: Creo-Light; font-weight: bolder; text-align: center; color: grey"> Quer saber o quanto você pode economizar produzindo sua própria energia? </h6>
                     </button>
                   </div>
                   <div class="modal-body">
