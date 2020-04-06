@@ -3484,6 +3484,7 @@ ficar alinhado no centro (cima-baixo)*/
 /* line 111, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_footer.scss */
 
 .footer .footer_top .footer_widget ul li a {
+    padding: 0px;
     color: #ccc;
     font-weight: 400;
     font-family: Creo-Light;

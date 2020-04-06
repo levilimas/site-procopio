@@ -161,7 +161,7 @@
                         <div class="col-xl-3 col-lg-3">
                             <div style="padding-bottom: 10px" class="logo-img">
                                 <a href="index.php">
-                                    <img class="img-fluid" src="<?php echo home_url(); ?>/wp-content/themes/site-procopio/img/logo3.png" alt="" width="183px" height="90px">
+                                    <img class="img-fluid" src="<?php echo get_option("header_logo");?>" alt="" width="183px" height="90px">
                                 </a>
                             </div>
                         </div>

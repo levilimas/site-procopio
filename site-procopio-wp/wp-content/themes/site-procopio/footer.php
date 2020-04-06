@@ -7,7 +7,7 @@
                         <div class="footer_widget">
                             <div class="footer_logo">
                                 <a href="#">
-                                    <img src="<?php echo home_url(); ?>/wp-content/themes/site-procopio/img/Logo-adaptada.png" width="70%" alt="">
+                                    <img src="<?php echo get_option("footer_logo");?>" width="70%" alt="">
                                 </a>
                             </div>
 
@@ -18,11 +18,7 @@
                             <h3 class="footer_title">
                                 INFORMAÇÃO
                             </h3>
-                            <ul class="links">
-                                <li><a href="#sobre">Sobre</a></li>
-                                <li><a href="#servicos">Serviços</a></li>
-                                <li><a href="#depoimentos">Depoimentos</a></li>
-                            </ul>
+                                <?php wp_nav_menu(get_menu_args("info_menu")); ?>
                         </div>
                     </div>
                     <div class="col-xl-2  col-md-4 col-lg-3">
@@ -30,11 +26,7 @@
                             <h3 class="footer_title">
                                 SERVIÇOS
                             </h3>
-                            <ul class="links">
-                                <li><a href="#">Visita ténica</a></li>
-                                <li><a href="#">Consultoria</a></li>
-                                <li><a href="#">Painéis</a></li>
-                            </ul>
+                            <?php wp_nav_menu(get_menu_args("services_menu")); ?>
                         </div>
                     </div>
                     <div class="col-xl-2  col-md-4 col-lg-2">
@@ -42,11 +34,7 @@
                             <h3 class="footer_title">
                                 SIGA-NOS
                             </h3>
-                            <ul class="links socail_links">
-                                <li><a href="#"><i class="fab fa-facebook-square fa-1x"></i> Facebook</a></li>
-                                <li><a href="#"><i class="fab fa-twitter-square fa-1x"></i>  Twitter</a></li>
-                                <li><a href="www.instagram.com/levilimas"><i class="fab fa-instagram-square fa-1x"></i> Instagram</a></li>
-                            </ul>
+                            <?php wp_nav_menu(get_menu_args("midias_menu")); ?>
                         </div>
                     </div>
                     
