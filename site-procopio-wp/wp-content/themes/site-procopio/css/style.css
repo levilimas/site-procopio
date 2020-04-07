@@ -16,13 +16,13 @@ background: #2B2D69;
 
 @media (min-width: 992px){
 
-    header .menu_wrap_inner a:hover:before {
+    header #navigation a:hover:before {
       visibility: visible;
       -webkit-transform: scaleX(1);
       transform: scaleX(1);
     }
 
-    header .menu_wrap_inner a:before {
+    header #navigation a:before {
       content: "";
       position: absolute;
       width: 100%;
@@ -37,12 +37,11 @@ background: #2B2D69;
       transition: all 0.3s ease-in-out 0s;
     }
 
-    header .menu_wrap_inner a {
+    header #navigation a {
       position: relative;
-      color: #fff;
       text-decoration: none;  
     }
-
+/*
     .slider_area .slider_text a:hover:before, .about_info a:hover:before, .make_apppointment_area .appoint_ment_form form button:hover:before {
       visibility: visible;
       -webkit-transform: scaleX(1);
@@ -67,7 +66,7 @@ background: #2B2D69;
     .slider_area .slider_text a, .about_info a, .make_apppointment_area .appoint_ment_form form button {
       position: relative;
       text-decoration: none;  
-    }
+    }*/
 
 
 }
@@ -804,6 +803,7 @@ h3 {
 }
 
 .make_apppointment_area .boxed-btn3 {
+	cursor: pointer;
     background: #fff01a;
     font-size: 16px !important;
     font-weight: bold;
@@ -819,7 +819,7 @@ h3 {
 
 /* line 39, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_btn.scss */
 
-.boxed-btn3:hover {
+.boxed-btn3:hover{
     background: #2B2D69;
     color: #fff01a;
     border: 1px solid #2B2D69;
@@ -1488,6 +1488,7 @@ h3 {
 /* line 99, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_header.scss */
 
 .header-area .main-header-area .main-menu ul li a {
+	padding: 5px !important;
     color: #2B2D69;
     font-size: 16px;
     text-transform: capitalize;
@@ -1617,6 +1618,7 @@ h3 {
 /* line 191, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_header.scss */
 
 .header-area .main-header-area .main-menu ul li:first-child a {
+	padding: 5px;
     padding-left: 0;
 }
 
@@ -4038,6 +4040,13 @@ ficar alinhado no centro (cima-baixo)*/
 
 .form-contact label {
     font-size: 14px;
+}
+
+.form_btn input{
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
 }
 
 
