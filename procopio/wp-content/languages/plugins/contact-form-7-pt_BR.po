@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Contact Form 7 - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-03-25 10:11:17+0000\n"
+"PO-Revision-Date: 2020-04-10 16:37:58+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -180,6 +180,10 @@ msgstr "Torne esta caixa de seleção opcional"
 #: admin/edit-contact-form.php:205
 msgid "https://contactform7.com/custom-development/"
 msgstr "https://contactform7.com/custom-development/"
+
+#: admin/edit-contact-form.php:202
+msgid "Support forums"
+msgstr "Fóruns de suporte"
 
 #: admin/edit-contact-form.php:201
 msgid "https://wordpress.org/support/plugin/contact-form-7/"

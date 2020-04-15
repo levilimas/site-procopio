@@ -77,13 +77,13 @@
                               <div class="input-group-prepend">
                                 <span class="input-group-text">$</span>
                               </div>
-                              <input type="text" name="valor" class="form-control" aria-label="Quanto você paga de energia por mês(R$)?" placeholder="Quanto você paga de energia por mês(R$)?" onKeyPress="return(moeda(this,'.',',',event))">
+                              <input type="text" name="valor" class="form-control" aria-label="Quanto você paga de energia por mês(R$)?" placeholder="Quanto você paga de energia por mês(R$)?" onKeyPress="return(moeda(this,'',',',event))" required>
                             </div>
                         </div>
                     </form>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-simular" id="modal2" onclick="toggleSection()">SIMULAR</button>
+                    <button type="submit" class="btn btn-simular" id="modal2" onclick="toggleSection()">SIMULAR</button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal" id="destravabotao2">FECHAR</button>
                     
                   </div>
@@ -103,44 +103,44 @@
                         <tbody>
                             <tr>
                                 <th class="col-md-1">
-                                   <b>Tarifa estimada</b> 
+                                   <b>Consumo estimado/mês</b> 
                                 </th>
                                 <th class="cold-md-1 tarifa-estimada"></th>
                             </tr>
 
                             <tr>
                                 <th class="col-md-1">
-                                   <b>Consumo estimado</b> 
+                                   <b>Consumo estimado/dia</b> 
                                 </th>
-                                <th class="cold-md-1 tarifa-estimada"></th>
+                                <th class="cold-md-1 consumo-dia"></th>
                             </tr>
 
                             <tr>
                                 <th class="col-md-1">
-                                   <b>Qntd. de placas estimada</b> 
+                                   <b>Geração diária nec.</b> 
                                 </th>
-                                <th class="cold-md-1 tarifa-estimada"></th>
+                                <th class="cold-md-1 geracao-necessaria"></th>
                             </tr>
 
                             <tr>
                                 <th class="col-md-1">
-                                   <b>Potência Inst. estimada</b> 
+                                   <b>Qntd. de placas</b> 
                                 </th>
-                                <th class="cold-md-1 tarifa-estimada"></th>
+                                <th class="cold-md-1 qntd-placas"></th>
                             </tr>
 
                             <tr>
                                 <th class="col-md-1">
-                                   <b>Produção anual de energia</b> 
+                                   <b>Investimento estimado</b> 
                                 </th>
-                                <th class="cold-md-1 tarifa-estimada"></th>
+                                <th class="cold-md-1 geracao_total_diaria"></th>
                             </tr>
 
                             <tr>
                                 <th class="col-md-1">
-                                   <b>INVESTIMENTO ESTIMADO</b> 
+                                   <b>RETORNO ESTIMADO</b> 
                                 </th>
-                                <th class="cold-md-1 tarifa-estimada"></th>
+                                <th class="cold-md-1 retorno" style="text-weight:bolder"></th>
                             </tr>                          
                         </tbody>
                     </table>

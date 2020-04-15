@@ -9,7 +9,7 @@
             <h3>Energia Solar Residencial e Comercial</h3>
             <h3><span style="font-size: 25px; text-transform: none; font-family: Source Sans Pro, sans-serif"> Economize até 95% na sua conta de energia.</span></h3>
             <p></p>
-            <a href="#test-form" data-toggle="modal" data-target="#calculadoraModal" data-whatever="@getbootstrap" class="boxed-btn3" id="travabotao">FAÇA AGORA SEU ORÇAMENTO GRATUITO</a>
+            <a href="#test-form" data-toggle="modal" data-target="#calculadoraModal" data-whatever="@getbootstrap" class="boxed-btn3" id="travabotao" >FAÇA AGORA SEU ORÇAMENTO GRATUITO</a>
         </div>
 
         <div class="slider_active owl-carousel">

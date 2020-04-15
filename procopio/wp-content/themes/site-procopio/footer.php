@@ -79,17 +79,14 @@
     <script src="<?php echo home_url(); ?>/wp-content/themes/site-procopio/js/wow.min.js"></script>
     <script src="<?php echo home_url(); ?>/wp-content/themes/site-procopio/js/nice-select.min.js"></script>
     <script src="<?php echo home_url(); ?>/wp-content/themes/site-procopio/js/jquery.slicknav.min.js"></script>
-    <script src="<?php echo home_url(); ?>/wp-content/themes/site-procopio/js/jquery.magnific-popup.min.js"></script>
     <script src="<?php echo home_url(); ?>/wp-content/themes/site-procopio/js/plugins.js"></script>
     <script src="<?php echo home_url(); ?>/wp-content/themes/site-procopio/js/gijgo.min.js"></script>
-    <script src="<?php echo home_url(); ?>/wp-content/themes/site-procopio/https://kit.fontawesome.com/ac0c01cedc.js" crossorigin="anonymous"></script>
 
     <!--contact js-->
     <script src="<?php echo home_url(); ?>/wp-content/themes/site-procopio/js/contact.js"></script>
     <script src="<?php echo home_url(); ?>/wp-content/themes/site-procopio/js/jquery.ajaxchimp.min.js"></script>
     <script src="<?php echo home_url(); ?>/wp-content/themes/site-procopio/js/jquery.form.js"></script>
     <script src="<?php echo home_url(); ?>/wp-content/themes/site-procopio/js/jquery.validate.min.js"></script>
-    <script src="<?php echo home_url(); ?>/wp-content/themes/site-procopio/js/mail-script.js"></script>
 
     <script src="<?php echo home_url(); ?>/wp-content/themes/site-procopio/js/main.js"></script>
     <script>
@@ -5892,7 +5889,7 @@
                 items: 1
             });
         });
-
+            
         
 
         function buscaCidades(e){
@@ -5929,16 +5926,46 @@
         function toggleSection (){
            var estado = $('#estado').val();
            var cidade = $('#cidade').val();
-           var tarifaEnergia = $('[name="valor"]').val();
+           var valor_real_energia = $('[name="valor"]').val();
 
-           $('.tarifa-estimada').text('teste');
-        }
             
-        $("#modal2").click(function() {
-          $('#tabelaModal').modal('show');
-          $('#calculadoraModal').modal('hide');
+
+           if(valor_real_energia.length == 0 || valor_real_energia == ''){
+                return false;
+           }else if(estado == 0 || estado == ''){
+                return false;
+           }else if(cidade == 0 || cidade == ''){
+                return false;
+           }else if(estado == '' && cidade == 0){
+                return false;
+           }
+
+            $('#tabelaModal').modal('show');
+            $('#calculadoraModal').modal('hide');
            document.getElementById('travabotao').disabled = true;
-        });
+
+
+           var consumo_por_mes = parseFloat(valor_real_energia)/parseFloat(0.75);
+           var kwm_por_dia = parseFloat(consumo_por_mes)/parseFloat(30);
+
+           // var kwp = kwm_por_dia/qnt_sol_pico;
+
+           // var qntdplaca = (kwp * 1000) / 340;
+
+           // var geracao_total_diaria = kwp * kwp;
+
+           var valor_gasto_5_anos = parseFloat(valor_real_energia * 12 * 5);
+
+           // var retorno = geracao_total_diaria - valor_gasto_5_anos;
+
+
+           $('.tarifa-estimada').text(parseFloat(consumo_por_mes.toFixed(2)));
+           $('.consumo-dia').text(parseFloat(kwm_por_dia.toFixed(2)));
+           // $('.geracao-necessaria').text(kwp);
+           // $('.qntdplacas').text(qntdplaca);
+           // $('.geracao_total_diaria').text(geracao_total_diaria);
+           // $('.retorno').text('Em 05 anos haverá um retorno de ' + retorno);
+        }
 
         $("#destravabotao2").click(function(){
             document.getElementById('travabotao').disabled = false;
@@ -5993,41 +6020,9 @@
                     });
                 }
             });
-
-
-            
-
-
         });
 
-
 </script>       
-
-   <!-- 
-    <form id="test-form" class="white-popup-block">
-        <div class="popup_box">
-            <div class="popup_inner">
-               <div id="calculadora" onwheel="return false;">
-                
-                    
-
-                       
-                            <div class="col-xl-12">
-                                <button type="button" class="boxed-btn3" </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="mfp-close-hide" id="tabela" data-backdrop="static" style="display: none">
-                 
-                        <div class="col-xl-8" style="display: inline-block;">
-                            <button type="button" class="boxed-btn3" onclick="voltarSessao()">Fazer outra simulação</button>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </form> -->
 
     <?php wp_footer(); ?>
 </body>

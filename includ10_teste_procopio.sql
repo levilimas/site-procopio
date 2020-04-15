@@ -114,8 +114,8 @@ CREATE TABLE `wp_options` (
 --
 
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
-(1, 'siteurl', 'http://localhost/Projeto%20Procopio/site-procopio-wp/', 'yes'),
-(2, 'home', 'http://localhost/Projeto%20Procopio/site-procopio-wp/', 'yes'),
+(1, 'siteurl', 'http://localhost/projeto-procopio/procopio/', 'yes'),
+(2, 'home', 'http://localhost/projeto-procopio/procopio/', 'yes'),
 (3, 'blogname', 'Procópio Engenharia', 'yes'),
 (4, 'blogdescription', '', 'yes'),
 (5, 'users_can_register', '0', 'yes'),
