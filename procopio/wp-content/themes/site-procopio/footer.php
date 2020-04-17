@@ -93,9 +93,6 @@
         $('#datepicker').datepicker({
             iconsLibrary: 'fontawesome',
             disableDaysOfWeek: [0, 0],
-            //     icons: {
-            //      rightIcon: '<span class="fa fa-caret-down"></span>'
-            //  }
         });
         $('#datepicker2').datepicker({
             iconsLibrary: 'fontawesome',
@@ -5883,6 +5880,9 @@
     }
   ]
 };
+        
+        
+
         $(document).ready(function() {
             $('.slider-active').owlCarousel({
                 loop: $('.owl-carousel .owl-item').length > 1 ? true : false,
@@ -5927,8 +5927,61 @@
            var estado = $('#estado').val();
            var cidade = $('#cidade').val();
            var valor_real_energia = $('[name="valor"]').val();
+           var qnt_sol_pico;
 
-            
+           if(estado == 'AC'){
+                qnt_sol_pico = parseFloat(4.56);
+           }else if(estado == 'AM'){
+                qnt_sol_pico = parseFloat(4.32);
+           }else if(estado == 'AP'){
+                qnt_sol_pico = parseFloat(4.90);
+           }else if(estado == 'BA'){
+                qnt_sol_pico = parseFloat(5.13);
+           }else if(estado == 'CE'){
+                qnt_sol_pico = parseFloat(5.69);
+           }else if(estado == 'DF'){
+                qnt_sol_pico = parseFloat(5.25);
+           }else if(estado == 'ES'){
+                qnt_sol_pico = parseFloat(5.13);
+           }else if(estado == 'GO'){
+                qnt_sol_pico = parseFloat(5.25);
+           }else if(estado == 'MA'){
+                qnt_sol_pico = parseFloat(5.17);
+           }else if(estado == 'MG'){
+                qnt_sol_pico = parseFloat(5.10);
+           }else if(estado == 'MS'){
+                qnt_sol_pico = parseFloat(5.03);
+           }else if(estado == 'MT'){
+                qnt_sol_pico = parseFloat(5.11);
+           }else if(estado == 'PA'){
+                qnt_sol_pico = parseFloat(4.80);
+           }else if(estado == 'PB'){
+                qnt_sol_pico = parseFloat(5.40);
+           }else if(estado == 'PE'){
+                qnt_sol_pico = parseFloat(5.57);
+           }else if(estado == 'PI'){
+                qnt_sol_pico = parseFloat(5.61);
+           }else if(estado == 'PR'){
+                qnt_sol_pico = parseFloat(4.18);
+           }else if(estado == 'RJ'){
+                qnt_sol_pico = parseFloat(4.73);
+           }else if(estado == 'RN'){
+                qnt_sol_pico = parseFloat(5.85);
+           }else if(estado == 'RO'){
+                qnt_sol_pico = parseFloat(4.44);
+           }else if(estado == 'RR'){
+                qnt_sol_pico = parseFloat(4.55);
+           }else if(estado == 'RS'){
+                qnt_sol_pico = parseFloat(4.43);
+           }else if(estado == 'SC'){
+                qnt_sol_pico = parseFloat(4.25);
+           }else if(estado == 'SE'){
+                qnt_sol_pico = parseFloat(5.56);
+           }else if(estado == 'SP'){
+                qnt_sol_pico = parseFloat(4.42);
+           }else if(estado == 'TO'){
+                qnt_sol_pico = parseFloat(5.22);
+           }
 
            if(valor_real_energia.length == 0 || valor_real_energia == ''){
                 return false;
@@ -5938,6 +5991,8 @@
                 return false;
            }else if(estado == '' && cidade == 0){
                 return false;
+           }else if(estado != null && cidade == null){
+                return false;
            }
 
             $('#tabelaModal').modal('show');
@@ -5945,26 +6000,27 @@
            document.getElementById('travabotao').disabled = true;
 
 
+
            var consumo_por_mes = parseFloat(valor_real_energia)/parseFloat(0.75);
+
            var kwm_por_dia = parseFloat(consumo_por_mes)/parseFloat(30);
 
-           // var kwp = kwm_por_dia/qnt_sol_pico;
+           var kwp = parseFloat(kwm_por_dia)/parseFloat(qnt_sol_pico);
+                      
+           var qntdplaca = parseFloat(kwp * 1000) / parseFloat(335);
 
-           // var qntdplaca = (kwp * 1000) / 340;
+           var geracao_total_diaria = parseFloat(kwp * 5200);
 
-           // var geracao_total_diaria = kwp * kwp;
+           var valor_gasto_5_anos = parseFloat(valor_real_energia)*12*5;
 
-           var valor_gasto_5_anos = parseFloat(valor_real_energia * 12 * 5);
-
-           // var retorno = geracao_total_diaria - valor_gasto_5_anos;
-
+           var retorno = (parseFloat(valor_gasto_5_anos) - parseFloat(geracao_total_diaria));
 
            $('.tarifa-estimada').text(parseFloat(consumo_por_mes.toFixed(2)));
            $('.consumo-dia').text(parseFloat(kwm_por_dia.toFixed(2)));
-           // $('.geracao-necessaria').text(kwp);
-           // $('.qntdplacas').text(qntdplaca);
-           // $('.geracao_total_diaria').text(geracao_total_diaria);
-           // $('.retorno').text('Em 05 anos haverá um retorno de ' + retorno);
+           $('.geracao-necessaria').text(parseFloat(kwp.toFixed(2)));
+           $('.qntd-placas').text(qntdplaca.toFixed(0));
+           $('.geracao_total_diaria').text(geracao_total_diaria.toFixed(2));
+           $('.retorno').text(retorno.toFixed(2));
         }
 
         $("#destravabotao2").click(function(){

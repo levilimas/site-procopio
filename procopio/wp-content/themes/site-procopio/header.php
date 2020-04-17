@@ -124,7 +124,7 @@
 
                             <tr>
                                 <th class="col-md-1">
-                                   <b>Qntd. de placas</b> 
+                                   <b>Qntd. de painéis</b> 
                                 </th>
                                 <th class="cold-md-1 qntd-placas"></th>
                             </tr>
@@ -138,9 +138,9 @@
 
                             <tr>
                                 <th class="col-md-1">
-                                   <b>RETORNO ESTIMADO</b> 
+                                   <b style="font-family: Creo !important">RETORNO ESTIMADO EM 5 ANOS</b> 
                                 </th>
-                                <th class="cold-md-1 retorno" style="text-weight:bolder"></th>
+                                <th class="cold-md-1 retorno" style="font-family: Creo !important"></th>
                             </tr>                          
                         </tbody>
                     </table>
