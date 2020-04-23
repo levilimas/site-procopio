@@ -8,9 +8,11 @@ window.onscroll = function() {
 
     var currentScrollPos = window.pageYOffset;
 
-    if (currentScrollPos > 200) {
-        var height = document.getElementsByClassName("header-area")[0].offsetHeight;
+    if (currentScrollPos > 100) {
         $('.header-area').addClass('navbar-dark')
+        if(currentScrollPos > 200)
+          var height = document.getElementsByClassName("header-area")[0].offsetHeight;
+        
         // document.getElementsByClassName("header-area")[0].classList.add('navbar-dark');
         // document.querySelector(".scroll-top").style.display = 'block';
     }else{
@@ -21,8 +23,6 @@ window.onscroll = function() {
 
    
     if (prevScrollpos > currentScrollPos) {
-      // alert(height)
-        // alert("gayyyyyyyyyyyyyyy");
         
         document.getElementsByClassName("header-area")[0].style.top = "0";
     } else {

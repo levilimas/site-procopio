@@ -171,9 +171,9 @@
                                     <div class="main-menu">
                                         <nav>
                                             <ul id="navigation">
-                                                <li><a class="active" href="index.php">HOME</a></li>
-                                                <li><a href="#">SERVIÇOS</a></li>
-                                                <li><a href="#">SOBRE</a></li>
+                                                <li><a class="active scrollSuave" href="<?php echo home_url(); ?>/index.php">HOME</a></li>
+                                                <li><a class="scrollSuave"href="<?php echo home_url(); ?>/index.php/servicos">SERVIÇOS</a></li>
+                                                <li><a class="scrollSuave"href="#">SOBRE</a></li>
                                                 <li><a href="#formulario" class="scrollSuave">CONTATO</a></li>
                                             </ul>
                                         </nav>
