@@ -2639,8 +2639,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff
+    background-color: #ffc107;
+    border-color: #181a40
 }
 
 .btn-simular {
@@ -2663,11 +2663,10 @@ fieldset:disabled a.btn {
     border: 1px solid #2B2D69;
 }
 
-
 .btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc
+    background-color: #181a40;
+    border-color: #181a40
 }
 
 .btn-primary.focus,
@@ -2678,15 +2677,15 @@ fieldset:disabled a.btn {
 .btn-primary.disabled,
 .btn-primary:disabled {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff
+    background-color: #181a40;
+    border-color: #181a40
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #0062cc;
+    background-color: #005cbf;
     border-color: #005cbf
 }
 
@@ -3379,7 +3378,7 @@ tbody.collapse.show {
 }
 
 .dropdown-menu {
-    position:static !important;
+    position: static !important;
     top: 100%;
     left: 0;
     z-index: 1000;
@@ -5664,7 +5663,7 @@ button.close {
 }
 
 .modal {
-    position:fixed;
+    position: fixed;
     top: 75.1px;
     right: 0;
     bottom: 0;
@@ -5676,7 +5675,7 @@ button.close {
 }
 
 .modaltabela {
-    position:fixed;
+    position: fixed;
     top: 75.1px;
     right: 0;
     bottom: 0;
@@ -9242,8 +9241,8 @@ a.text-dark:hover {
 
 @media print {
     *,
-    ::after,
-    ::before {
+     ::after,
+     ::before {
         text-shadow: none!important;
         box-shadow: none!important
     }

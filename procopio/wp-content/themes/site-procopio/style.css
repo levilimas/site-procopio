@@ -6,6 +6,7 @@
   Description: Tema desenvolvido pela IncludeJr para Procopio engenharia by joao e levi.
   Version: 2.1.6
 */
+
 @import "css/bootstrap.min.css";
 @import "css/owl.carousel.min.css";
 @import "css/magnific-popup.css";
@@ -17,3 +18,4 @@
 @import "css/animate.css";
 @import "css/slicknav.css";
 @import "css/style.css";
+@import "css/internas.css"

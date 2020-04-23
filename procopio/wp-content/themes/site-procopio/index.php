@@ -62,9 +62,9 @@
                             <p>A Procópio Engenharia é uma empresa, focada em sistemas fotovoltáicos e projetos de automação residenciais e comerciais. Nossa equipe é composta por engenheiros e técnicos engajados em melhor atender nossos clientes e mudar a forma como o mundo interage com as energias renováveis e as novas tecnologias de automação residencial e comercial.</p>
                         </div>
                         <p class="opening_hour">
-                            <span>ATENDIMENTO PERSONALIZADO!</span>
+                            <span></span>
                         </p>
-                        <a href="#" class="boxed-btn3">CONHEÇA MAIS</a>
+                        <a href="#formulario" class="boxed-btn3">CONHEÇA MAIS</a>
                     </div>
                 </div>
             </div>

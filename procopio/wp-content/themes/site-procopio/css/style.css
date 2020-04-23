@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Yeseva+One&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Yeseva+One&display=swap");
 
@@ -6,42 +5,38 @@
 
 
 /* degrade para a barra vertical */
-body::-webkit-scrollbar-thumb {
-border-radius: 10px;
-border-right: 2px solid #2B2D69;
-background: #2B2D69;
 
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border-right: 2px solid #2B2D69;
+    background: #2B2D69;
 }
 
-
-@media (min-width: 992px){
-
+@media (min-width: 992px) {
     header #navigation a:hover:before {
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
     }
-
     header #navigation a:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 3px;
-      bottom: 0;
-      left: 0;
-      background-color: #2B2D69;
-      visibility: hidden;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.3s ease-in-out 0s;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: #2B2D69;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
     }
-
     header #navigation a {
-      position: relative;
-      text-decoration: none;  
+        position: relative;
+        text-decoration: none;
     }
-/*
+    /*
     .slider_area .slider_text a:hover:before, .about_info a:hover:before, .make_apppointment_area .appoint_ment_form form button:hover:before {
       visibility: visible;
       -webkit-transform: scaleX(1);
@@ -67,31 +62,29 @@ background: #2B2D69;
       position: relative;
       text-decoration: none;  
     }*/
-
-
 }
 
- .wrapper{
+.wrapper {
     border: 1px dashed red;
     height: 150px;
     overflow-x: hidden;
     overflow-y: scroll;
     width: 150px;
- }
- .wrapper .selection{
-   width:150px;
-   border:1px solid #ccc
- }
+}
 
-.body .modal-open .modal{
+.wrapper .selection {
+    width: 150px;
+    border: 1px solid #ccc
+}
 
+.body .modal-open .modal {
     font-family: Creo-Light !important;
 }
+
 @font-face {
     font-family: 'Creo';
     src: url('../fonts/Creo-ExtraBold.ttf');
-    src: url('../fonts/Creo-ExtraBold.ttf') format('embedded-opentype'),
-        url('../fonts/Creo-ExtraBold.ttf') format('truetype'),
+    src: url('../fonts/Creo-ExtraBold.ttf') format('embedded-opentype'), url('../fonts/Creo-ExtraBold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -99,21 +92,21 @@ background: #2B2D69;
 @font-face {
     font-family: 'Creo-Light';
     src: url('../fonts/Creo-ExtraLight.ttf');
-    src: url('../fonts/Creo-ExtraLight.ttf') format('embedded-opentype'),
-        url('../fonts/Creo-ExtraLight.ttf') format('truetype'),
+    src: url('../fonts/Creo-ExtraLight.ttf') format('embedded-opentype'), url('../fonts/Creo-ExtraLight.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-body::-webkit-scrollbar{
-width: 0.6%;
-background: rgba(255, 255, 255, 2);
+body::-webkit-scrollbar {
+    width: 0.6%;
+    background: rgba(255, 255, 255, 2);
 }
 
-select{
+select {
     overflow-y: scroll !important;
     overflow-x: auto;
 }
+
 .flex-center-start {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -126,46 +119,57 @@ select{
     justify-content: start;
 }
 
-.slider_area .slider_text h3 span{
+.slider_area .slider_text h3 span {
     color: #fff01a;
 }
+
 div .fixed {
-    position: fixed; top: 0; left: 0; 
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .nice-select {
-  -webkit-tap-highlight-color: transparent;
-  background-color: #fff;
-  border-radius: 5px;
-  border: solid 1px #e0e7ee;
-  box-sizing: border-box;
-  clear: both;
-  cursor: pointer;
-  display: block;
-  float: left;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: normal;
-  height: 42px;
-  line-height: 40px;
-  outline: none;
-  padding-left: 18px;
-  padding-right: 30px;
-  position: relative;
-  text-align: left !important;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  white-space: nowrap;
-  width: auto; }
-  .nice-select:hover {
-    border-color: #d0dae5; }
-  .nice-select:active, .nice-select.open, .nice-select:focus {
-    border-color: #88bfff; }
-  .nice-select:after {
+    -webkit-tap-highlight-color: transparent;
+    background-color: #fff;
+    border-radius: 5px;
+    border: solid 1px #e0e7ee;
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    height: 42px;
+    line-height: 40px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 30px;
+    position: relative;
+    text-align: left !important;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
+}
+
+.nice-select:hover {
+    border-color: #d0dae5;
+}
+
+.nice-select:active,
+.nice-select.open,
+.nice-select:focus {
+    border-color: #88bfff;
+}
+
+.nice-select:after {
     border-bottom: 2px solid #90a1b5;
     border-right: 2px solid #90a1b5;
     content: '';
@@ -177,51 +181,75 @@ div .fixed {
     right: 12px;
     top: 50%;
     -webkit-transform-origin: 66% 66%;
-        -ms-transform-origin: 66% 66%;
-            transform-origin: 66% 66%;
+    -ms-transform-origin: 66% 66%;
+    transform-origin: 66% 66%;
     -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
     -webkit-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out;
-    width: 5px; }
-  .nice-select.open:after {
+    width: 5px;
+}
+
+.nice-select.open:after {
     -webkit-transform: rotate(-135deg);
-        -ms-transform: rotate(-135deg);
-            transform: rotate(-135deg); }
-  .nice-select.open .list {
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.nice-select.open .list {
     opacity: 1;
     pointer-events: auto;
     -webkit-transform: scale(1) translateY(0);
-        -ms-transform: scale(1) translateY(0);
-            transform: scale(1) translateY(0); }
-  .nice-select.disabled {
+    -ms-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+}
+
+.nice-select.disabled {
     border-color: #e7ecf2;
     color: #90a1b5;
-    pointer-events: none; }
-    .nice-select.disabled:after {
-      border-color: #cdd5de; }
-  .nice-select.wide {
-    width: 100%; }
-    .nice-select.wide .list {
-      left: 0 !important;
-      right: 0 !important; }
-  .nice-select.right {
-    float: right; }
-    .nice-select.right .list {
-      left: auto;
-      right: 0; }
-  .nice-select.small {
+    pointer-events: none;
+}
+
+.nice-select.disabled:after {
+    border-color: #cdd5de;
+}
+
+.nice-select.wide {
+    width: 100%;
+}
+
+.nice-select.wide .list {
+    left: 0 !important;
+    right: 0 !important;
+}
+
+.nice-select.right {
+    float: right;
+}
+
+.nice-select.right .list {
+    left: auto;
+    right: 0;
+}
+
+.nice-select.small {
     font-size: 12px;
     height: 36px;
-    line-height: 34px; }
-    .nice-select.small:after {
-      height: 4px;
-      width: 4px; }
-    .nice-select.small .option {
-      line-height: 34px;
-      min-height: 34px; }
-  .nice-select .list {
+    line-height: 34px;
+}
+
+.nice-select.small:after {
+    height: 4px;
+    width: 4px;
+}
+
+.nice-select.small .option {
+    line-height: 34px;
+    min-height: 34px;
+}
+
+.nice-select .list {
     max-height: 300px;
     background-color: #fff;
     border-radius: 5px;
@@ -236,17 +264,21 @@ div .fixed {
     top: 100%;
     left: 0;
     -webkit-transform-origin: 50% 0;
-        -ms-transform-origin: 50% 0;
-            transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    transform-origin: 50% 0;
     -webkit-transform: scale(0.75) translateY(-21px);
-        -ms-transform: scale(0.75) translateY(-21px);
-            transform: scale(0.75) translateY(-21px);
+    -ms-transform: scale(0.75) translateY(-21px);
+    transform: scale(0.75) translateY(-21px);
     -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
     transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
-    z-index: 9; }
-    .nice-select .list:hover .option:not(:hover) {
-      background-color: transparent !important; }
-  .nice-select .option {
+    z-index: 9;
+}
+
+.nice-select .list:hover .option:not(:hover) {
+    background-color: transparent !important;
+}
+
+.nice-select .option {
     cursor: pointer;
     font-weight: 400;
     line-height: 40px;
@@ -257,19 +289,26 @@ div .fixed {
     padding-right: 29px;
     text-align: left;
     -webkit-transition: all 0.2s;
-    transition: all 0.2s; }
-.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
-    background-color: #f6f7f9; 
+    transition: all 0.2s;
 }
+
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
+    background-color: #f6f7f9;
+}
+
 .nice-select .option.selected {
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 .nice-select .option.disabled {
     background-color: transparent;
     color: #90a1b5;
-    cursor: default; 
+    cursor: default;
 }
+
+
 /* line 13, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_extend.scss */
 
 .overlay::before {
@@ -305,8 +344,8 @@ body {
     font-style: normal;
 }
 
-@media (max-width: 767px){
-    body{
+@media (max-width: 767px) {
+    body {
         text-align: center;
     }
 }
@@ -731,22 +770,21 @@ h3 {
     cursor: pointer;
 }
 
-@media (max-width: 700px) and (min-width: 420px){
-    .boxed-btn3{
+@media (max-width: 700px) and (min-width: 420px) {
+    .boxed-btn3 {
         font-size: 17px !important;
     }
-
 }
 
-@media (max-width: 420px) and (min-width: 320px){
-    .boxed-btn3{
+@media (max-width: 420px) and (min-width: 320px) {
+    .boxed-btn3 {
         font-size: 12px !important;
     }
-
-    .slider_area .slider_text h3{
+    .slider_area .slider_text h3 {
         font-size: 38px !important;
     }
 }
+
 
 /* line 17, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_btn.scss */
 
@@ -787,10 +825,9 @@ h3 {
     border-radius: 5px;
 }
 
-
 .about_area .boxed-btn3 {
     background: #fff01a;
-    font-size: 16px !important; 
+    font-size: 16px !important;
     font-weight: bold;
     border: 1px solid transparent;
     padding: 15px !important;
@@ -803,7 +840,7 @@ h3 {
 }
 
 .make_apppointment_area .boxed-btn3 {
-	cursor: pointer;
+    cursor: pointer;
     background: #fff01a;
     font-size: 16px !important;
     font-weight: bold;
@@ -817,9 +854,10 @@ h3 {
     border-radius: 5px;
 }
 
+
 /* line 39, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_btn.scss */
 
-.boxed-btn3:hover{
+.boxed-btn3:hover {
     background: #2B2D69;
     color: #fff01a;
     border: 1px solid #2B2D69;
@@ -1488,7 +1526,7 @@ h3 {
 /* line 99, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_header.scss */
 
 .header-area .main-header-area .main-menu ul li a {
-	padding: 5px !important;
+    padding: 5px !important;
     color: #2B2D69;
     font-size: 16px;
     text-transform: capitalize;
@@ -1618,7 +1656,7 @@ h3 {
 /* line 191, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_header.scss */
 
 .header-area .main-header-area .main-menu ul li:first-child a {
-	padding: 5px;
+    padding: 5px;
     padding-left: 0;
 }
 
@@ -2349,7 +2387,8 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 993px) {
-    .col-lg-4, .col-md-6{
+    .col-lg-4,
+    .col-md-6 {
         padding-right: 0px !important;
     }
 }
@@ -3164,28 +3203,42 @@ h3 {
     }
 }
 
-
-.close{
-    width: 24px; /*largura*/
-    height: 24px; /*altura*/
-    font-size: 8px; /*tamanho da fonte (X)*/
+.close {
+    width: 24px;
+    /*largura*/
+    height: 24px;
+    /*altura*/
+    font-size: 8px;
+    /*tamanho da fonte (X)*/
     line-height: 24px;
-/*tamanho da linha que contem o texto -
+    /*tamanho da linha que contem o texto -
 24 é o mesmo tamanho do botão para o X
 ficar alinhado no centro (cima-baixo)*/
-    text-align: center; /*alinhamento to texto no meio do botão (esq-dir)*/
-    position: relative; /*relativo para ficar por posicionado como está
+    text-align: center;
+    /*alinhamento to texto no meio do botão (esq-dir)*/
+    position: relative;
+    /*relativo para ficar por posicionado como está
 - acima e para fora da caixa de alerta*/
-    right: -288px; /*posição em relação à  linha da caixa de alerta - horizontal*/
-    top: -12px; /*posição em relação à  linha da caixa de alerta - vertical*/
-    float: left; /*desacopla o botão do resto dos componentes*/
-    border-radius: 50%; /*raio de circunferencia dos cantos - 50% faz cada lado ficar totalmente redondo, criando um botão circular*/
-    border: 1px solid #ccc; /*borda do botão*/
-    background-color: #F55555; /*cor de fundo do botão*/
-    color: #000; /*cor do text*/
-    transition: all 0.2s ease; /*animação que ocorre quando alguma ação é realizada*/
-    cursor: pointer; /*mostra o dedo de link mostrando que é clicável*/
+    right: -288px;
+    /*posição em relação à  linha da caixa de alerta - horizontal*/
+    top: -12px;
+    /*posição em relação à  linha da caixa de alerta - vertical*/
+    float: left;
+    /*desacopla o botão do resto dos componentes*/
+    border-radius: 50%;
+    /*raio de circunferencia dos cantos - 50% faz cada lado ficar totalmente redondo, criando um botão circular*/
+    border: 1px solid #ccc;
+    /*borda do botão*/
+    background-color: #F55555;
+    /*cor de fundo do botão*/
+    color: #000;
+    /*cor do text*/
+    transition: all 0.2s ease;
+    /*animação que ocorre quando alguma ação é realizada*/
+    cursor: pointer;
+    /*mostra o dedo de link mostrando que é clicável*/
 }
+
 
 /* line 184, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_gallery.scss */
 
@@ -3667,14 +3720,14 @@ ficar alinhado no centro (cima-baixo)*/
     color: #E8E8E8;
 }
 
-.make_apppointment_area .appointMent_info .single_appontment > p > a{
+.make_apppointment_area .appointMent_info .single_appontment>p>a {
     color: #06063e;
 }
 
-
-.make_apppointment_area .appointMent_info .single_appontment > p > a:hover{
-    color:#fff01a;
+.make_apppointment_area .appointMent_info .single_appontment>p>a:hover {
+    color: #fff01a;
 }
+
 
 /* line 225, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_footer.scss */
 
@@ -3779,9 +3832,8 @@ ficar alinhado no centro (cima-baixo)*/
     }
 }
 
-@media only screen and (max-width: 767px) and (min-width: 576px){
+@media only screen and (max-width: 767px) and (min-width: 576px) {}
 
-}
 
 /* line 54, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_bradcam.scss */
 
@@ -3839,7 +3891,6 @@ ficar alinhado no centro (cima-baixo)*/
 }
 
 
-
 /* line 113, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_bradcam.scss */
 
 .popup_box .nice-select.open .list {
@@ -3892,12 +3943,13 @@ ficar alinhado no centro (cima-baixo)*/
 
 
 /* line 148, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_bradcam.scss */
+
 #test-form button.mfp-close {
-        display: block !important;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
+    display: block !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 
@@ -4042,11 +4094,11 @@ ficar alinhado no centro (cima-baixo)*/
     font-size: 14px;
 }
 
-.form_btn input{
-	transition: 0.3s;
-	-webkit-transition: 0.3s;
-	-moz-transition: 0.3s;
-	-o-transition: 0.3s;
+.form_btn input {
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 
@@ -5645,6 +5697,7 @@ h6 {
     height: 40px;
 }
 
+
 /* line 1086, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_elements.scss */
 
 .mt-10 {
@@ -5839,7 +5892,10 @@ h6 {
     }
 }
 
-.testimonial_area .owl-carousel .owl-nav.disabled{display:block}
+.testimonial_area .owl-carousel .owl-nav.disabled {
+    display: block
+}
+
 
 /* line 112, ../../Arafath/CL/january 2020/238. Barber/HTML/scss/_blog.scss */
 
@@ -6892,7 +6948,7 @@ h6 {
     }
 }
 
-.typewrite > .wrap{
+.typewrite>.wrap {
     color: #fff01a;
 }
 
