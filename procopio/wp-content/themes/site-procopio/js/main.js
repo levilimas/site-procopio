@@ -132,6 +132,31 @@ $('.slider_active').owlCarousel({
       }
   }
 });
+
+$('.page-sobre').owlCarousel({
+  loop:true,
+  margin:0,
+  items:2,
+  autoplay:true,
+  navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
+  nav:true,
+  dots:false,
+  autoplayHoverPause: true,
+  autoplaySpeed: 800,
+  responsive:{
+      0:{
+          items:1
+      },
+      767:{
+          items:1
+      },
+      992:{
+          items:2
+      }
+  }
+});
+
+
 // review-active
 $('.prising_slider_active').owlCarousel({
   loop:true,

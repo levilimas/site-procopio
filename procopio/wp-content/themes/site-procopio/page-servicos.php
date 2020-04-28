@@ -8,12 +8,8 @@
                     Saiba como funciona
                 </h1> 
                 <h3 class="container-fluid" style="margin-top:30px; font-family: Creo-Light; text-align: justify; ">
-                    A energia solar é uma grande aliada na economia de energia para sua casa ou 
-                    empresa. Já é uma realidade acessível à grande parte da população em todo o país e é exatamente aqui 
-                    que buscamos lhe ajudar da melhor forma. Contribuindo pra que você cliente, possa se beneficiar da 
-                    melhor forma. Desde a aquisição de seu sistema solar fotovoltáico, até a liberação da distribuidora
-                    de sua região. Tudo para sua maior comodidade. Saiba mais como funciona o processo de captação e 
-                    transformação da energia e entenda todos seus benefícios:
+                    <?php echo get_the_content(); ?>
+                    
                 </h3>
                     <div class="row">
                         <div class="col-md-12">

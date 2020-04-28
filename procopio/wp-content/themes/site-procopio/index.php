@@ -64,7 +64,7 @@
                         <p class="opening_hour">
                             <span></span>
                         </p>
-                        <a href="#formulario" class="boxed-btn3">CONHEÇA MAIS</a>
+                        <a href="<?php echo home_url(); ?>/index.php/sobre" class="boxed-btn3">CONHEÇA MAIS</a>
                     </div>
                 </div>
             </div>
