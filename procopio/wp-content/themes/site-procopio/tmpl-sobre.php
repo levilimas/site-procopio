@@ -11,7 +11,7 @@
                     Sobre Nós
                 </h1> 
                 <h3 class="container-fluid" style="margin-top:30px; font-family: Creo-Light; text-align: justify; ">
-                    <?php echo get_the_content(); ?>
+                    TEXTO DO EVENEUDO
                 </h3>
             </div>
         <section>          
