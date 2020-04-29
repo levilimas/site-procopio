@@ -72,6 +72,9 @@
     </div>
     <!-- área sobre fim -->
 
+    <!-- área Serviços início -->
+    
+
     <div id="servicos" class="service_area">
         <div class="container">
             <div class="row justify-content-center ">
@@ -83,51 +86,45 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_service">
-                        <div class="service_thumb">
-                            <img src="<?php echo home_url(); ?>/wp-content/themes/site-procopio/img/automation/automation2.jpg" alt="">
-                        </div>
-                        <div class="service_content text-center">
-                            <div class="icon">
-                                <i class="fa fa-home"></i>
-                            </div>
-                            <h3>Automação Residencial</h3>
-                            <p>Sua casa inteligente e com maior comodidade em todas as horas, garantindo mais conforto e facilidade de gerir equipamentos e ambientes a qualquer distância.</p>
-                        </div>
+            <?php
+                $query = new WP_Query( array( 'post_type' => 'nossos_servicos' ) ); 
+                             
+                    // O Loop
+                        if ( $query->have_posts() ) {
+                            while ( $query->have_posts() ) {
+                                 $query->the_post();
+            ?>
+            <div class="col-lg-4 col-md-6">
+                <div class="single_service">
+                    <div class="service_thumb">
+                    <?php echo get_the_post_thumbnail();?>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_service">
-                        <div class="service_thumb">
-                            <img src="<?php echo home_url(); ?>/wp-content/themes/site-procopio/img/servicos/service4.jpg" alt="">
+                    <div class="service_content text-center">
+                        <div class="icon">
+                            <?php echo get_field("icones");?>
                         </div>
-                        <div class="service_content text-center">
-                            <div class="icon">
-                                <i class="fas fa-bolt"></i>
-                            </div>
-                            <h3>Projetos e Soluções Elétricas</h3>
-                            <p>Projetos de toda sua planta elétrica e adequação das suas instalações de acordo com o padrão nacional, reduzindo nriscos de descarga elétrica e mais economia.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_service">
-                        <div class="service_thumb">
-                            <img src="<?php echo home_url(); ?>/wp-content/themes/site-procopio/img/servicos/service2.jpg" alt="">
-                        </div>
-                        <div class="service_content text-center">
-                            <div class="icon">
-                                <i class="fas fa-solar-panel"></i>
-                            </div>
-                            <h3>Energia Solar</h3>
-                            <p>Projetos e instalação de sistemas fotovoltáicos, garantindo o preço justo e a economia na sua conta de energia em até 95%, com as tecnologias mais inovadoras do mercado.</p>
-                        </div>
+                        <h3>
+                            <?php echo get_the_title(); ?>
+                        </h3>
+                        <p><?php echo get_the_excerpt(); ?></p>
                     </div>
                 </div>
             </div>
+                
+            <?php 
+                    }
+                } else {
+                    // no posts found
+                }
+                /* Restore original Post Data */
+                wp_reset_postdata();
+            ?>
+                
+            </div>
         </div>
     </div>
+
+     <!-- área Serviços fim -->
 
    
 
