@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the WordPress - 5.4.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-03-31 15:43:10+0000\n"
+"PO-Revision-Date: 2020-05-13 11:57:22+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: GlotPress/2.4.0-alpha\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha\n"
 "Language: pt_BR\n"
 "Project-Id-Version: WordPress - 5.4.x - Development\n"
 
@@ -16557,7 +16557,7 @@ msgstr "junho"
 #: wp-includes/class-wp-locale.php:153 wp-includes/class-wp-locale.php:181
 #: wp-includes/js/dist/components.js:33059
 msgid "May"
-msgstr "Maio"
+msgstr "maio"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.

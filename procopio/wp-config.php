@@ -20,7 +20,7 @@
 
 // ** Configurações do MySQL - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define( 'DB_NAME', 'includ10_teste_procopio' );
+define( 'DB_NAME', 'include_procopio' );
 
 /** Usuário do banco de dados MySQL */
 define( 'DB_USER', 'root' );
@@ -50,14 +50,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         ')0!ky*!}.-kL=|*FuuW^Rwb<o<ntBR[8F*})}cxL=Y R.kYNY|<uy6^9`WtPCzQ@' );
-define( 'SECURE_AUTH_KEY',  '&4<k;qBxNF=It47[0gy>g4v^o=N|T?wJz }D0-(<Q,<FD/@T=s}8wNV#Gl?Jf-eH' );
-define( 'LOGGED_IN_KEY',    ',tQ:tTG]||46Z/ja=]4-z-u[ZTXa35Vlr)noe%is6I1<Z2H]@Ki,)yt|~E|yI)!9' );
-define( 'NONCE_KEY',        't5u?tx6U6fHI2gr(zGwb_];%&p,>]i~v^fSG`-ZD8WF`l6~U[37G@q.u)i~5t=b{' );
-define( 'AUTH_SALT',        'Q|0{GxL}Vn&z.ih&~)38NQO+16&r}tMk#[z9L~_[NyurK0@aeMLAh)b0A5[`0JYd' );
-define( 'SECURE_AUTH_SALT', 'z+[,-+6<#m~}iujT+B.wLN:cUPfN%W)yy(W_fO0YL}=tZhnR>j2^o{a>io~WB$s|' );
-define( 'LOGGED_IN_SALT',   '&tz)8wccs_>:tN/1n{X:jn.-(#C]t(l@8u!Fvc``%eHJ;3Hp](4LC;K2cAMO<MUm' );
-define( 'NONCE_SALT',       'lArfIqGkC$/~:pT*8MrK$W_q-~s5]X74!|d;8E:AtGvah VIezdtB7]!#:::jUM7' );
+define( 'AUTH_KEY',         'r$v*TD_Xw;s_Ac??-@afXDI@ &#;/{Nqe5-k3pr%kjKk%!J/[8?]%MJqoa*hs6un' );
+define( 'SECURE_AUTH_KEY',  '7B7Sq0?Y:Kw#+320Y/v|V9-IR0iMH4ctw<@kU1:Co9afi/zi?2|ddz:ld]qvW>RI' );
+define( 'LOGGED_IN_KEY',    ', Y;d*KE<o:X[BPkZ%c*d6wUC+B{O[99U>:KSuX`<T[Ivy/[K^6SK-,Lsn0(k`5v' );
+define( 'NONCE_KEY',        '%_ui^?=Q`wU i8o+K)G2ec6mLFwy^/Jttc)HW,V;!Vo!~S;s[cs$8j)a9g0][n-F' );
+define( 'AUTH_SALT',        '7/q[p1L>,<sBWC|9v#jH:lr$PUa[h!?s2rD0V2O~]l0Con*W?O<7Qc?j..u?znOA' );
+define( 'SECURE_AUTH_SALT', '|Rg~L;`dpI@< yBw&[1/L)z*gS#QfJyXI9]}WDHQaIM7p&Q(($e!b<2%+}$law4{' );
+define( 'LOGGED_IN_SALT',   '-hbS}T?tHHWpDnMw<#Q(wsCmRyMN/8:R`_.DARzkRNEy3 @lQZg`<6+0}5u!z2{S' );
+define( 'NONCE_SALT',       'g%m@<[NhNf@uimEt?#{nQT%Q[*Oi%s/:TAW}a[pog+&M8goxA.@tWorV]@0(yXPX' );
 
 /**#@-*/
 
@@ -93,3 +93,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Configura as variáveis e arquivos do WordPress. */
 require_once ABSPATH . 'wp-settings.php';
+
+/** Permite o downloads e atualizações no localhost */
+define('FS_METHOD', 'direct');
