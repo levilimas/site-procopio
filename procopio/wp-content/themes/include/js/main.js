@@ -26,6 +26,18 @@
 		prevScrollpos = currentScrollPos;
 	};
 
+	/**
+	 * Funções de manipulação do menu mobile
+	 */
+	// Abrir
+	$('.mobile-header .sidemenu-cta .open').click(function () {
+		$('.mobile-sidemenu').css('right', '0%');
+	});
+	// Fechar
+	$('.mobile-sidemenu .sidemenu-cta .close-menu').click(function () {
+		$('.mobile-sidemenu').css('right', '100%');
+	});
+
 	var TxtType = function (el, toRotate, period) {
 		this.toRotate = toRotate;
 		this.el = el;
@@ -463,5 +475,14 @@
 	$('#search_1').on('click', function () {
 		$('#search_input_box').slideToggle();
 		$('#search_input').focus();
+	});
+
+	//Abrir
+	$('.mobile-header .sidemenu-cta .open').click(function () {
+		$('.mobile-sidemenu').css('left', '0%');
+	});
+	// Fechar
+	$('.mobile-sidemenu .sidemenu-cta .close-menu').click(function () {
+		$('.mobile-sidemenu').css('left', '100%');
 	});
 })(jQuery);

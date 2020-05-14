@@ -171,11 +171,48 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12">
-                <div class="mobile_menu d-block d-lg-none"></div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-header">
+          <div class="container-fluid">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-6">
+                <div class="logo">
+                  <a href="<?php echo esc_url(home_url()); ?>" title="Logo <?php echo bloginfo('name'); ?>">
+                    <img src="<?php echo get_option('header_logo'); ?>" class="img-fluid" alt="Logo <?php echo bloginfo('name'); ?>">
+                  </a>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="sidemenu-cta">
+                  <a href="#!" class="open" title="Menu">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="mobile-sidemenu">
+          <div class="header">
+            <div class="logo">
+              <a href="<?php echo esc_url(home_url()); ?>" title="Logo <?php echo bloginfo('name'); ?>">
+                <img src="<?php echo get_option('header_logo'); ?>" class="img-fluid" alt="Logo <?php echo bloginfo('name'); ?>">
+              </a>
+            </div>
+            <div class="sidemenu-cta">
+              <a href="#!" class="close-menu" title="Fechar">
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <nav>
+            <?php
+              $args = get_menu_args('header_menu');
+              wp_nav_menu($args);
+            ?>
+          </nav>
         </div>
       </div>
     </header>
