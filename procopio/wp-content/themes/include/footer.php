@@ -113,6 +113,15 @@
     
     <!-- JS here -->
     <script type="text/javascript">
+
+      function mascaraValor(valor) {
+        valor = valor.toString().replace(/\D/g,"");
+        valor = valor.toString().replace(/(\d)(\d{8})$/,"$1.$2");
+        valor = valor.toString().replace(/(\d)(\d{5})$/,"$1.$2");
+        valor = valor.toString().replace(/(\d)(\d{2})$/,"$1,$2");
+        return valor                    
+      }
+
       function moeda(a, e, r, t) {
           let n = ""
             , h = j = 0
@@ -327,12 +336,13 @@
 
           var retorno = (parseFloat(valor_gasto_5_anos) - parseFloat(geracao_total_diaria));
 
-          $('.tarifa-estimada').text(parseFloat(consumo_por_mes.toFixed(2)));
-          $('.consumo-dia').text(parseFloat(kwm_por_dia.toFixed(2)));
-          $('.geracao-necessaria').text(parseFloat(kwp.toFixed(2)));
+
+          $('.tarifa-estimada').text(parseFloat(mascaraValor(consumo_por_mes.toFixed(2))));
+          $('.consumo-dia').text(parseFloat(mascaraValor(kwm_por_dia.toFixed(2))));
+          $('.geracao-necessaria').text(mascaraValor(parseFloat(kwp.toFixed(2))));
           $('.qntd-placas').text(qntdplaca.toFixed(0));
-          $('.geracao_total_diaria').text(geracao_total_diaria.toFixed(2));
-          $('.retorno').text(retorno.toFixed(2));
+          $('.geracao_total_diaria').text(mascaraValor(geracao_total_diaria.toFixed(2)));
+          $('.retorno').text(mascaraValor(retorno.toFixed(2)));
         });        
 
         $(".slicknav_menu li a").click(function(event) {
